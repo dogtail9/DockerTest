@@ -1,0 +1,24 @@
+version: '3'
+
+services:
+  webapplication1:
+    image: webapplication1
+
+  webapplication2:
+    image: webapplication2
+   
+  proxy:
+    image: proxy
+    build:
+      context: .
+      dockerfile: Dockerfiles\Proxy\Dockerfile
+    depends_on:
+      - webapplication1
+      - webapplication2
+    ports:
+      - "8500:80"
+
+networks:
+  default:
+    external:
+      name: "nat"

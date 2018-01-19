@@ -1,0 +1,27 @@
+version: '3'
+
+services:
+  
+  webapplication1:
+    build:
+      context: .
+      dockerfile: WebApplication1\Dockerfile
+    environment:
+      - ASPNETCORE_ENVIRONMENT=Development
+  
+  webapplication2:
+    build:
+      context: .
+      dockerfile: WebApplication2\Dockerfile
+    environment:
+      - ASPNETCORE_ENVIRONMENT=Development
+
+  nginx:
+    image: nginx
+    build:
+      context: .
+      dockerfile: Dockerfiles\Nginx\Dockerfile
+  
+  proxy:
+    depends_on:
+      - nginx

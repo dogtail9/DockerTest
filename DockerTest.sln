@@ -1,0 +1,54 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 15
+VisualStudioVersion = 15.0.27130.2024
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WebApplication1", "WebApplication1\WebApplication1.csproj", "{2D0A1EE6-3C8D-4654-8FA3-F563486F74D8}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WebApplication2", "WebApplication2\WebApplication2.csproj", "{9FA4A553-C6BB-406D-9168-9B059EF86B93}"
+EndProject
+Project("{E53339B2-1760-4266-BCC7-CA923CBCF16C}") = "docker-compose", "docker-compose.dcproj", "{202C6695-3093-4663-A27C-C079C068219C}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Dockerfiles", "Dockerfiles", "{4EF5044B-50E5-419B-BE9D-8CAB774D6B98}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Nginx", "Nginx", "{944B2F14-61DE-45FC-8DAC-98615C9199A5}"
+	ProjectSection(SolutionItems) = preProject
+		Dockerfiles\Nginx\Dockerfile = Dockerfiles\Nginx\Dockerfile
+	EndProjectSection
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Proxy", "Proxy", "{9F72D9CD-73D6-4E23-B7C9-681AA6208DF9}"
+	ProjectSection(SolutionItems) = preProject
+		Dockerfiles\Proxy\Dockerfile = Dockerfiles\Proxy\Dockerfile
+		Dockerfiles\Proxy\nginx.conf = Dockerfiles\Proxy\nginx.conf
+	EndProjectSection
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{2D0A1EE6-3C8D-4654-8FA3-F563486F74D8}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{2D0A1EE6-3C8D-4654-8FA3-F563486F74D8}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{2D0A1EE6-3C8D-4654-8FA3-F563486F74D8}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{2D0A1EE6-3C8D-4654-8FA3-F563486F74D8}.Release|Any CPU.Build.0 = Release|Any CPU
+		{9FA4A553-C6BB-406D-9168-9B059EF86B93}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{9FA4A553-C6BB-406D-9168-9B059EF86B93}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{9FA4A553-C6BB-406D-9168-9B059EF86B93}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{9FA4A553-C6BB-406D-9168-9B059EF86B93}.Release|Any CPU.Build.0 = Release|Any CPU
+		{202C6695-3093-4663-A27C-C079C068219C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{202C6695-3093-4663-A27C-C079C068219C}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{202C6695-3093-4663-A27C-C079C068219C}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{202C6695-3093-4663-A27C-C079C068219C}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{944B2F14-61DE-45FC-8DAC-98615C9199A5} = {4EF5044B-50E5-419B-BE9D-8CAB774D6B98}
+		{9F72D9CD-73D6-4E23-B7C9-681AA6208DF9} = {4EF5044B-50E5-419B-BE9D-8CAB774D6B98}
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {8399C55C-8B95-48C0-896C-F6E3F621213D}
+	EndGlobalSection
+EndGlobal
